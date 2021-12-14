@@ -364,6 +364,7 @@ body {
   margin-bottom: 20px;
 }
 .footer-content {
+  flex-grow: 1;
   margin-right: 70px;
 }
 .footer-social {
@@ -409,23 +410,24 @@ body {
   display: block;
 }
 .sub-field {
-  padding: 15px 16px;
-  margin-right: 12px;
   width: 358px;
   height: 50px;
   background-color: transparent;
   color: var(--second-accent-color);
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+  padding: 15px 16px;
+  margin-right: 12px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sub-field:-webkit-autofill {
   -webkit-background-clip: text;
@@ -440,7 +442,6 @@ body {
 }
 .sub-field:focus {
   border-color: var(--main-accent-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   outline: none;
 }
 /* ------------------------Стили для portfolio.html-------------------  */
@@ -643,7 +644,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--main-title-color);
+  color: var(--text-color);
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -663,6 +664,7 @@ body {
   fill: var(--main-accent-color);
 }
 .form-comment {
+  display: block;
   resize: none;
   width: 100%;
   height: 120px;
@@ -675,7 +677,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--main-title-color);
+  color: var(--text-color);
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -692,11 +694,11 @@ body {
   margin-right: auto;
 }
 .check-wrap {
-  margin-left: 12px;
   margin-bottom: 30px;
 }
 .check-text {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-weight: 400;
   line-height: 1.71;
